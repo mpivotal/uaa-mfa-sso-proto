@@ -1,2 +1,15 @@
-%h1 Main#barcode_setup
-%p Find me in app/views/main/barcode_setup.html.haml
+.row
+  .col-md-12.col-md-push-6
+    .panel.panel-basic-alt.phxl.pvxl
+      .panel-body
+        %h1.man Acme Inc. Identity
+        %h2.mtxl Setup Google Authenticator
+        %p.mtxl
+          You will be asked for a passcode when you sign in from an unrecognize computer.
+        %ol.phxl.pvxl
+          %li Open Google Authenticator on your phone.
+          %li Tap the "+" button.
+          %li Tap "Scan barcode".
+          %li Scan this barcode:
+        = image_tag 'qrcode'
+        %p.mtl= "Can’t scan barcode? See <a href='#{manual_setup_path}'>manual setup instructions</a>.".html_safe
