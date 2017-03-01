@@ -3,11 +3,11 @@ Rails.application.routes.draw do
 
   get '/install', to: 'main#install'
 
-  get '/barcode_setup', to: 'main#barcode_setup'
+  get '/barcode-setup', to: 'main#barcode_setup'
 
-  get '/manual_setup', to: 'main#manual_setup'
+  get '/manual-setup', to: 'main#manual_setup'
 
-  get '/passcode_setup', to: 'main#passcode_setup'
+  get '/passcode-setup', to: 'main#passcode_setup'
 
   get '/success', to: 'main#sign_in'
 

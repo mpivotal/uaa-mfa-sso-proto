@@ -1,9 +1,8 @@
 @import 'pui-variables';
 body {
   &.main {
-    &.sign_in {
-      background-color: #f8f8f8 !important;
-    }
+    background-color: #f8f8f8 !important;
+    &.sign_in {}
   }
 
 }

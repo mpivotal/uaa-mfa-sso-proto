@@ -1,2 +1,13 @@
-%h1 Main#install
-%p Find me in app/views/main/install.html.haml
+.row
+  .col-md-12.col-md-push-6
+    .panel.panel-basic-alt.phxl.pvl
+      .panel-body
+        %h1 Acme Inc. Identity
+        %h2.mtxl Install Google Authenticator
+        %p.mtxl
+          You will be asked for a passcode when you sign in from an unrecognize computer.
+        %ol.phxl.pvxl
+          %li Open the App Store on your iPhone or Google Play on your Android.
+          %li Search for Google Authenticator.
+          %li Download and Install Google Authenticator.
+        = link_to "Continue to Setup", barcode_setup_path, class: 'btn btn-default mbxl'
