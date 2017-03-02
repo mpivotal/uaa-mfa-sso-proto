@@ -1,2 +1,25 @@
-%h1 Main#manual_setup
-%p Find me in app/views/main/manual_setup.html.haml
+.row
+  .col-md-12.col-md-push-6
+    .panel.panel-basic-alt.phxl.pvxl
+      .panel-body
+        %h1.man Acme Inc. Identity
+        %h2.mtxl Manual Setup Instructions
+        %p.mtxl
+          You will be asked for a passcode when you sign in from an unrecognize computer.
+        %ol.phxl.pvxl
+          %li Open Google Authenticator on your phone.
+          %li Tap the '+' button.
+          %li Tap 'Manual entry'
+          %li
+            Enter the following in the 'Account' field:
+            %p.type-brand-6
+              Acme: email@example.com
+          %li
+            Enter the following in the 'Key' field:
+            %p.type-brand-6
+              U3KD9J3O10MVN313
+          %li Tap the 'Done' button on your phone.
+.txt-c.mtxxl
+  NOTE: This screen will auto-advance after the user taps 'Done' on their phone.
+  %br
+  = link_to "Passcode Verify Link", verify_passcode_path, style: "color: magenta;"

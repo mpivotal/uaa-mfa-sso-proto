@@ -7,7 +7,7 @@ Rails.application.routes.draw do
 
   get '/manual-setup', to: 'main#manual_setup'
 
-  get '/passcode-setup', to: 'main#passcode_setup'
+  get '/verify-passcode', to: 'main#passcode_setup'
 
   get '/success', to: 'main#sign_in'
 
