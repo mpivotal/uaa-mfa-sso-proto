@@ -13,4 +13,4 @@
           %li Scan this barcode:
         = image_tag 'qrcode.png'
         %p.mtl= "Can’t scan barcode? See <a href='#{manual_setup_path}'>manual setup instructions</a>.".html_safe
-= render partial: 'partials/prototype_msg', locals: { the_link: verify_passcode_path }
+= render partial: 'partials/prototype_msg', locals: { the_link: verify_passcode_path, show_note: true }
