@@ -3,6 +3,16 @@ body {
   &.main {
     background-color: #f8f8f8 !important;
     &.sign_in {}
+    .passcode input[type=number]::-webkit-inner-spin-button,
+    .passcode input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    &.success {
+      background: $neutral-11 !important;
+      .container {
+        margin-top: 0 !important;
+      }
+    }
   }
-
 }

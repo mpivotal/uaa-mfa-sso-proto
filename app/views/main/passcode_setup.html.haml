@@ -1,2 +1,20 @@
-%h1 Main#passcode_setup
-%p Find me in app/views/main/passcode_setup.html.haml
+.row
+  .col-md-12.col-md-push-6
+    .panel.panel-basic-alt.phxl.pvxl
+      .panel-body
+        %h1.man Acme Inc. Identity
+        %h2.mtxl Setup Google Authenticator
+        %p.mtxl
+          Enter the 6-digit code displayed in Google Authenticator app:
+        %form.form-inline.passcode{ action: '/success', method: 'get'}
+          %input.form-control.mrs.txt-c.em-high#pc_1{ type: 'number', style: 'max-width: 48px;', value: 3}
+          %input.form-control.mrs.txt-c.em-high#pc_2{ type: 'number', style: 'max-width: 48px;', value: 2}
+          %input.form-control.mrxl.txt-c.em-high#pc_3{ type: 'number', style: 'max-width: 48px;', value: 1}
+          %input.form-control.mrs.txt-c.em-high#pc_4{ type: 'number', style: 'max-width: 48px;', value: 4}
+          %input.form-control.mrs.txt-c.em-high#pc_5{ type: 'number', style: 'max-width: 48px;', value: 5}
+          %input.form-control.txt-c.em-high#pc_6{ type: 'number', style: 'max-width: 48px;', 'max-length' => 1, value: 6}
+          %button.btn.btn-highlight.mlxl 
+            Verify
+        %p.type-error-3.type-sm.mtm
+          Incorrect code, please try again.
+= render partial: 'partials/prototype_msg', locals: { the_link: success_path }
